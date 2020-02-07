@@ -6,11 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:55 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:21 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:55:15 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 void *ft_memset(void *b, int c, size_t len)
 {
   char  *p;
