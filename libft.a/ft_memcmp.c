@@ -6,12 +6,12 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:30 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:07 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 13:01:43 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-int memcmp(const void *s1, const void *s2, size_t n)
+#include "libft.h"
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
   char  str1;
   char  str2;
