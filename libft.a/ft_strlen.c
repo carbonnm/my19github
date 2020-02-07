@@ -6,10 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:29:23 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:39 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:58:22 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 size_t  ft_strlen(char *s)
 {
   int i;
