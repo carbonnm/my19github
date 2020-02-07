@@ -6,11 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:29:18 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:35 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:55:49 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 size_t  ft_strlcpy(char * restrict dst, const char * restrict src, size_t size)
 {
 
