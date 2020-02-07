@@ -6,11 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:52:46 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:52:50 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:53:22 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 int ft_atoi(const char *str)
 {
   int resultat;
