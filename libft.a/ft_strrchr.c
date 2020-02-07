@@ -6,11 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:30:50 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:48 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:56:26 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 char  *ft_strrchr(const char *s, int c)
 {
   int i;
