@@ -6,11 +6,11 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:29:11 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:38:31 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/07 12:55:39 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t size)
 {
 
