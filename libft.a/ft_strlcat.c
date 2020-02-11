@@ -1,32 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/07 12:28:30 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 13:01:43 by cmarie           ###   ########.fr       */
+/*   Created: 2020/02/07 12:29:11 by cmarie            #+#    #+#             */
+/*   Updated: 2020/02/07 12:55:39 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t size)
 {
-  char  str1;
-  char  str2;
-  int i;
 
-  str1 = s1;
-  str2 = s2;
-  i = 0;
-  while (i < n)
-  {
-    if (str1[i] < str2[i])
-      return (-1);
-    if (str1[i] > str2[i])
-      return (1);
-    i++;
-  }
-  return (0);
 }

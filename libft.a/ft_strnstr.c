@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/07 12:28:30 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 13:01:43 by cmarie           ###   ########.fr       */
+/*   Created: 2020/02/07 12:30:46 by cmarie            #+#    #+#             */
+/*   Updated: 2020/02/07 13:02:01 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+char  *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-  char  str1;
-  char  str2;
   int i;
+  int j;
 
-  str1 = s1;
-  str2 = s2;
   i = 0;
-  while (i < n)
+  j = 0;
+  while (haystack[i] != '\0' && needle[j] != '\0')
   {
-    if (str1[i] < str2[i])
-      return (-1);
-    if (str1[i] > str2[i])
-      return (1);
-    i++;
+    while (haystack[len] > 0)
+    {
+      if (haystack[i] != needle[j])
+        i++;
+      len--;
+    }
   }
-  return (0);
 }

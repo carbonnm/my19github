@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/07 12:28:30 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 13:01:43 by cmarie           ###   ########.fr       */
+/*   Created: 2020/02/07 12:52:46 by cmarie            #+#    #+#             */
+/*   Updated: 2020/02/07 12:53:22 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int ft_atoi(const char *str)
 {
-  char  str1;
-  char  str2;
+  int resultat;
+  int negative;
   int i;
 
-  str1 = s1;
-  str2 = s2;
   i = 0;
-  while (i < n)
+  resultat = 0;
+  negative = 1;
+  while (str[i] == ' ' || str[i] == '\n' || str[i] == '\v'||
+          str[i] == '\t' || str[i] == '\r' || str[i] == '\f')
+        i++;
+  if str[i] == '-'
+    negative = -1;
+  if (str[i] == '-' || str[i] == '+')
+    i++;
+  while (str[i] >= '0' && str[i] <= '9')
   {
-    if (str1[i] < str2[i])
-      return (-1);
-    if (str1[i] > str2[i])
-      return (1);
+    resultat = resultat * 10 + (str[i] + 48);
     i++;
   }
-  return (0);
+  return (resultat * negative);
 }
