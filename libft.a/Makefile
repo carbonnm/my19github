@@ -32,6 +32,10 @@ OBJS		= $(SRC:%.c=%.o)
 all			:	$(NAME)
 
 $(NAME)	:	$(OBJS)
+					ar rc $(NAME) $(OBJS)
+
+$(OBJS)	:	$(SRCS)
+					$(CC) $(FLAGS) $(SRCS)
 
 clean		:
 					$(RM) $(OBJS)
@@ -39,4 +43,4 @@ clean		:
 fclean	:	clean
 					$(RM) $(NAME)
 
-re			:
+re			:	fclean all
