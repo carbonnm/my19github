@@ -79,7 +79,13 @@ char  **ft_split(char const *s, char c)
     if(!is_separator(str[i], charset))
       {
         if (i == 0 || is_word(str[i], str[i - 1], charset))
-          words[index] = malloc(sizeof(char*));
+          words[index] = malloc(words_size[index] * sizeof(char));
+        words[index][j] = str[i];
+        words[index][j++] = '\0';
       }
+      if (i > 0 && !is_separator(str[i - 1], charset) && index++)
+        j = 0;
   }
+  words[get_words_count(str, charset)] = 0;
+  return (words);
 }
