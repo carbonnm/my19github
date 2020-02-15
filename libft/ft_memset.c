@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:55 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 12:09:34 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 17:26:48 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,12 @@ Grace a ca, je peux remplir avec l'octet c mon p sur la taille voulue.
 #include "libft.h"
 void *ft_memset(void *b, int c, size_t len)
 {
-  char  *p;
-
-  p = b;
+  unsigned char  *p;
+  if ( b == 0)
+    return (NULL);
+  if (len == 0)
+    return (b);
+  p = (unsigned char *)b;
   while (len-- > 0)
   {
     *p = (char)c;
