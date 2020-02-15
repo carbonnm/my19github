@@ -6,9 +6,14 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:33:10 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:33:12 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:28:18 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue et retourne un tableau de chaines de caracteres obtenu
+en séparant s à l’aide du caractère c, utilisé comme délimiteur.
+Le tableau doit être terminé par NULL.
+*/
 
 #include "libft.h"
 int is_separator(char c, char *charset)
