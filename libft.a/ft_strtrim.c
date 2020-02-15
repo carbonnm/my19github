@@ -6,9 +6,13 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:33:56 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:33:57 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:26:07 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue et retourne une copie de la chaine s1, sans les caractères spécifiés
+dans set au début et à la fin de la chaine de caractères.
+*/
 
 #include "libft.h"
 char  *ft_strtrim(char const *s1, char const *set)
