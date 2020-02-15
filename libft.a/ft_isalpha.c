@@ -6,9 +6,12 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:27:16 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:59:28 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 12:47:24 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Verifie si le caractere est alphabetique.
+*/
 
 #include "libft.h"
 int ft_isalpha(int c)
