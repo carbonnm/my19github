@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:26:21 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 14:58:08 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 16:00:20 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void *ft_calloc(size_t count, size_t size)
   if (count == 0 || size == 0)
     return (NULL);
   resultat = malloc(count * size);
-  if resultat == NULL
+  if (resultat == NULL)
     return (NULL);
   while (i <= count)
   {
