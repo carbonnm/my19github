@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:30 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 12:45:00 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 17:19:31 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ Ce sont elles que je vais pouvoir comparer, et retourner ce qui convient.
 #include "libft.h"
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-  char  str1;
-  char  str2;
+  unsigned char  *str1;
+  unsigned char  *str2;
   int i;
 
-  str1 = s1;
-  str2 = s2;
+  str1 = (unsigned char *)s1;
+  str2 = (unsigned char *)s2;
   i = 0;
   while (i < n)
   {
