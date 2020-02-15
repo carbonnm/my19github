@@ -6,9 +6,13 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:31:56 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:32:25 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:30:13 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue et retourne une chaine de caractères représentant l’integer
+reçu en argument. Les nombres négatifs doivent être gérés.
+*/
 
 #include "libft.h"
 char  ft_itao(int n)
