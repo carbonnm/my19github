@@ -6,9 +6,13 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:32:13 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:32:19 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:33:26 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Ecrit le caractere c sur le file descriptor donne.
+Fonction write autorisee.
+*/
 
 #include "libft.h"
 
