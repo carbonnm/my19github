@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:27:56 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 15:04:49 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 17:15:46 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,18 @@ un pointeur sur le caractere durect apres.
 #include "libft.h"
 void *ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-  char  *dest;
-  const char  *source;
+  unsigned char  *dest;
+  unsigned char  *source;
   int i;
 
-  dest = dst;
-  source = src;
+  dest = (unsigned char *)dst;
+  source = (unsigned char *)src;
   i = 0;
   while (i < n)
   {
-    dst[i] = src[i];
-    if (dst[i] == (char)c)
-      return (dst + i + 1);
+    dest[i] = source[i];
+    if (dest[i] == (unsigned char)c)
+      return ((void *)(dst + i + 1));
     i++;
   }
   return (NULL);
