@@ -6,9 +6,13 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:33:25 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:33:27 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:22:40 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue et retourne une nouvelle chaine, résultat de la concaténation
+de s1 et s2.
+*/
 
 #include "libft.h"
 char  ft_strjoin(char const *s1, char const *s2)
