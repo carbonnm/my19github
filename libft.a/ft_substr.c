@@ -6,9 +6,14 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:34:06 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:34:08 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:16:51 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Alloue et retourne une chaine de caractères issue de la chaine s.
+Cette nouvelle chaine commence à l’index start et
+a pour taille maximale len.
+*/
 
 #include "libft.h"
 char  *ft_substr(char const *s, unsigned int start, size_t len)
