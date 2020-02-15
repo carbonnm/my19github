@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:52:46 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 15:44:48 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 15:51:58 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,9 @@ int ft_atoi(const char *str)
     i++;
   while (str[i] >= '0' && str[i] <= '9')
   {
-    resultat = resultat * 10 + (str[i] + 48);
+    resultat = resultat * 10 + (str[i] - '0');
+    if (resultat < 0)
+      return (negative > 0 ? -1 : 0);
     i++;
   }
   return (resultat * negative);
