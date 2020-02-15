@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:32:13 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 14:33:26 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 17:27:55 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,4 @@ Fonction write autorisee.
 void ft_putchar_fd(char c, int fd)
 {
   write(fd, &c, 1);
-  return (1);
 }
