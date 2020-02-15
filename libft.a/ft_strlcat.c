@@ -6,9 +6,16 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:29:11 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:55:39 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 13:20:13 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Concatenation de chaines limitees par la taille.
+Elle ajoute la chaine terminee par NULL src a la fin de dst.
+Il ajoutera au plus la taille - 1 octet de dst,
+mettant fin au resultat NULL.
+Elle renvoie la longueur initiale de dst plus la longueur de src.
+*/
 
 #include "libft.h"
 size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t size)
