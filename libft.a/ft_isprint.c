@@ -6,9 +6,12 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:27:48 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:58:46 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 12:51:01 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Verifie s'il s'agit d'un caractere imprimable.
+*/
 
 #include "libft.h"
 int ft_isprint(int c)
