@@ -6,9 +6,12 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:27:40 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:59:03 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 12:48:10 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Verifie si on a un chiffre ( de 0 a 9).
+*/
 
 #include "libft.h"
 int ft_isdigit(int c)
