@@ -6,9 +6,14 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:33:39 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 12:21:16 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 14:31:32 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Applique la fonction f à chaque caractère de la chaine de caractères
+passée en argument pour créer une nouvelle chaine de caractères
+résultant des applications successives de f.
+*/
 
 #include "libft.h"
 char  *ft_strmapi(char const *s, char (*f)(unsigned int, char))
