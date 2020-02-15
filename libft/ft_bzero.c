@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:36:40 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 15:54:53 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 15:56:07 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@ Je vais venir le remplir avec des '\0'.
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char *p;
-
+	if (s == 0)
+		return (NULL);
 	p = s;
 	while (n-- > 0)
 	{
-		*p = '\0'
+		*p = '\0';
 		p++;
 	}
 	return (b);
