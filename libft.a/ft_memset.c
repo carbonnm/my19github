@@ -6,9 +6,17 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:55 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 12:55:15 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 12:09:34 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Memset remplit une zone de memoire avec un octet donne.
+Elle remplit les len premiers octets de la zone memoire pointee par b.
+Elle va les remplir avec l'octet c.
+Puisque je ne peux pas directement remplir cette zone comme ca,
+je cree un pointeur, qui lui sera egal a ce b.
+Grace a ca, je peux remplir avec l'octet c mon p sur la taille voulue.
+*/
 
 #include "libft.h"
 void *ft_memset(void *b, int c, size_t len)
