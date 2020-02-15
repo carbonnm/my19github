@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:52:46 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 15:41:41 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 15:44:48 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Il retourne le resultat * la variable negative pour avoir le nombre correct.
 #include "libft.h"
 int ft_atoi(const char *str)
 {
-  int resultat;
+  long resultat;
   int negative;
   int i;
 
