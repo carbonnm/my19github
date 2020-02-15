@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:52:46 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 12:01:14 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 15:41:41 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int ft_atoi(const char *str)
   while (str[i] == ' ' || str[i] == '\n' || str[i] == '\v'||
           str[i] == '\t' || str[i] == '\r' || str[i] == '\f')
         i++;
-  if str[i] == '-'
+  if (str[i] == '-')
     negative = -1;
   if (str[i] == '-' || str[i] == '+')
     i++;
