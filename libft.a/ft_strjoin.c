@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/15 11:33:25 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 15:08:10 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 15:11:22 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char  ft_strjoin(char const *s1, char const *s2)
   if (!(str = (char *)malloc(sizeof(char) * i)))
     return (NULL);
   if (s1)
-    while(s1[j])
+    while (s1[j])
         str[i++] = s1[j++];
   j = 0;
   if (s2)
