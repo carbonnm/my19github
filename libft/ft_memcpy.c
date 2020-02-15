@@ -6,7 +6,7 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:28:38 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 12:25:38 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 17:21:55 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ J'egale donc ces deux pointeurs tant que i < n.
 #include "libft.h"
 void *ft_memcpy(void *dst, const void *src, size_t n)
 {
-  char  *dest;
-  const char  *source:
+  unsigned char  *dest;
+  unsigned char  *source:
   int   i;
 
-  dest = dst;
-  source = src;
+  dest = (unsigned char *)dst;
+  source = (unsigned char *)src;
   i = 0;
   if ((src == NULL) || (dst == NULL))
     return (NULL)
