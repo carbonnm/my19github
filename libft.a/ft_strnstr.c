@@ -6,9 +6,17 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:30:46 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/07 13:02:01 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 13:23:18 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*recherche d'une sous-chaine.
+Elle cherche la premiere occurence de la sous chaine aiguille
+au sein de la chaine botte de foin sur n caracteres.
+Les caracteres \0 ne comptent pas.
+Elle renvoie un pointeur sur le debut de la sous chaine.
+Sinon NULL.
+*/
 
 #include "libft.h"
 char  *ft_strnstr(const char *haystack, const char *needle, size_t len)
