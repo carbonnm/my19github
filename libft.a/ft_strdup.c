@@ -6,9 +6,15 @@
 /*   By: cmarie <cmarie@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/07 12:29:07 by cmarie            #+#    #+#             */
-/*   Updated: 2020/02/15 11:36:37 by cmarie           ###   ########.fr       */
+/*   Updated: 2020/02/15 13:29:20 by cmarie           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Duplication d'une chaine.
+Elle renvoie un pointeur sur une nouvelle chaîne de caractères
+qui est dupliquée depuis s. La mémoire occupée par cette nouvelle chaîne
+est obtenue en appelant malloc, et peut donc être libérée avec free.
+*/
 
 #include "libft.h"
 char  *ft_strdup(const char *s1)
